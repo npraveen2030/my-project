@@ -1,12 +1,22 @@
+// import { Component } from '@angular/core';
+
+// @Component({
+//   selector: 'app-root',
+//   standalone: true,
+//   imports: [],
+//   templateUrl: './app.component.html',
+//   styleUrl: './app.component.scss'
+// })
+// export class AppComponent {
+//   title = 'angular18-app';
+// }
 import { Component } from '@angular/core';
+import { RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [],
-  templateUrl: './app.component.html',
-  styleUrl: './app.component.scss'
+  imports: [RouterModule],
+  template: `<router-outlet></router-outlet>`,
 })
-export class AppComponent {
-  title = 'angular18-app';
-}
+export class AppComponent {}
